@@ -10,11 +10,10 @@ function Navigation({ isLoggedIn, setIsLoggedIn }) {
   const logout = () => {
     localStorage.removeItem("token");
     setIsLoggedIn(false);
-    navigate("/login");
+    navigate("/");
   };
 
-  // Render the Login and Register links only if the current route is not '/login' or '/register' or '/dashboard'
-  // Render Logout button only if isLoggedIn is true
+  console.log("Is user logged in:", isLoggedIn);
   return (
     <nav>
       {!isLoggedIn &&
@@ -22,15 +21,27 @@ function Navigation({ isLoggedIn, setIsLoggedIn }) {
         pathname !== "/register" &&
         pathname !== "/dashboard" && (
           <>
+            <Link className="home_link" to="/">
+              <i class="fas fa-home"></i> Home
+            </Link>
+            <div className="spacer"></div>
             <Link className="login_link" to="/login">
-              Login
+              <i className="fas fa-sign-in-alt"></i> Login
             </Link>
             <Link className="register_link" to="/register">
-              Register
+              <i className="fas fa-user-plus"></i> Register
             </Link>
           </>
         )}
-      {isLoggedIn && <button onClick={logout}>Logout</button>}
+
+      {isLoggedIn && (
+        <>
+          <Link className="home_link" to="/">
+            <i class="fas fa-home"></i> Home
+          </Link>
+          <button onClick={logout}>Logout</button>
+        </>
+      )}
     </nav>
   );
 }
