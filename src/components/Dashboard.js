@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Home from "./Home";
+// import Home from "./Home";
+import DiaryBlogSpace from "./DairyBlogSpace";
+import "./Dashboard.css";
 
 const Dashboard = ({ onLogout, user, isLoggedIn }) => {
   const navigate = useNavigate();
@@ -13,9 +15,10 @@ const Dashboard = ({ onLogout, user, isLoggedIn }) => {
 
   return (
     isLoggedIn && (
-      <div>
-        <h2>Welcome to the Universe Dashboard</h2>
-        <Home />
+      <div className="dashboard_div">
+        {/* <h2>Welcome to the Universe Dashboard</h2> */}
+        {/* <button onClick={handleClick}>Create Blog Space</button> */}
+        <DiaryBlogSpace />
       </div>
     )
   );

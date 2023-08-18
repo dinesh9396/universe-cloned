@@ -1,10 +1,11 @@
 // Product.js
 import React from "react";
 // import { mockProducts } from "./data/MockProducts";
+import "./Product.css";
 
 const Product = ({ product }) => {
   return (
-    <div className="col-sm-6">
+    <div className="col-sm-4">
       <div className="card text-center">
         <img
         //   src={product.imageUrl}

@@ -5,6 +5,8 @@ import Home from "./Home";
 import Login from "./login";
 import Register from "./Registration";
 import Dashboard from "./Dashboard";
+// import "./AuthRoutes.css";
+// import CreateUserBlog from "./CreateUserBlog";
 
 const AuthRoutes = ({ isLoggedIn, setIsLoggedIn }) => {
   const navigate = useNavigate();
@@ -29,7 +31,7 @@ const AuthRoutes = ({ isLoggedIn, setIsLoggedIn }) => {
   };
 
   return (
-    <Routes>
+    <Routes className="authroutes_div">
       <Route path="/" element={<Home />} />
       <Route
         path="/login"
@@ -53,6 +55,7 @@ const AuthRoutes = ({ isLoggedIn, setIsLoggedIn }) => {
           <Dashboard onLogout={logout} user={user} isLoggedIn={isLoggedIn} />
         }
       />
+      {/* <Route path="/createUserBlog" element={<CreateUserBlog />} /> */}
     </Routes>
   );
 };

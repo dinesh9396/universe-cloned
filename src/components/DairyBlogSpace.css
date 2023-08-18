@@ -1,0 +1,134 @@
+/* DairyBlogSpace.css */
+
+.menu-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.left-side {
+  width: 240px;
+  height: 100%;
+  background-color: #2c3e50;
+  padding: 15px 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.ant-menu {
+  width: 100%;
+  height: 100%;
+  background-color: #2c3e50;
+  border-right: none;
+}
+
+.ant-menu-item {
+  color: #ecf0f1;
+  border-radius: 6px;
+  margin: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.ant-menu-item:hover {
+  background-color: #34495e;
+}
+
+.dashboard_heading{
+  background-color: #34495e;
+  color: #ffffff;
+  margin-left: 10px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.company_heading{
+  background-color: #34495e;
+  color: #ffffff;
+  /* margin-left: 10px; */
+  padding: 10px;
+  width: 100%;
+}
+
+.content-body {
+  flex: 1;
+  padding: 40px;
+  padding-top: 0px;
+  background-color: #b6dfff;
+  /* overflow-y: auto; */
+}
+
+.dairyBlogAdmin_h1 {
+  color: #ffffff;
+  font-size: 2em;
+  margin: 30px;
+}
+
+.back_button {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* margin: 20px 0; */
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.blog-h3 {
+  color: #333;
+  border-bottom: 2px solid #3498db;
+  padding: 0 10px 10px 10px;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.blog-card-container {
+  display: flex;
+  background-color: #2c3e50;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.blog-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: calc(33.33% - 40px);
+  cursor: pointer;
+  margin: 10px;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.blog-title {
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.heading_row {
+  background-color: #2c3e50;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

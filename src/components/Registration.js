@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
+import "./Registration.css";
 
 function Register({ onRegister, setUser: setGlobalUser }) {
   const [user, setUser] = useState({
@@ -49,40 +50,46 @@ function Register({ onRegister, setUser: setGlobalUser }) {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="register_div">
+      <form className="register_form" onSubmit={handleSubmit}>
         <input
+          className="register_input"
           type="text"
           name="name"
           placeholder="Name"
           onChange={handleChange}
         />
         <input
+          className="register_input"
           type="email"
           name="email"
           placeholder="Email"
           onChange={handleChange}
         />
         <input
+          className="register_input"
           type="password"
           name="password"
           placeholder="Password"
           onChange={handleChange}
         />
         <input
+          className="register_input"
           type="text"
           name="profession"
           placeholder="Profession"
           onChange={handleChange}
         />
         <input
+          className="register_input"
           type="text"
           name="license"
           placeholder="License"
           onChange={handleChange}
         />
-        <label>
+        <label className="register_label">
           <input
+            className="register_checkbox"
             type="checkbox"
             name="diaryblogAccess"
             checked={user.diaryblogAccess}
@@ -90,8 +97,9 @@ function Register({ onRegister, setUser: setGlobalUser }) {
           />
           Diary Blog Access
         </label>
-        <label>
+        <label className="register_label">
           <input
+            className="register_checkbox"
             type="checkbox"
             name="typeitAccess"
             checked={user.typeitAccess}
@@ -99,7 +107,9 @@ function Register({ onRegister, setUser: setGlobalUser }) {
           />
           Type It Access
         </label>
-        <button type="submit">Register</button>
+        <button className="register_button" type="submit">
+          Register
+        </button>
         <Link className="login_link" to="/login">
           Already have an account? Login
         </Link>

@@ -10,8 +10,8 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
-    <div>
-      <h1>UNIVERSE</h1>
+    <div className="app_div">
+      {/* <h1>UNIVERSE</h1> */}
       <Router>
         <Navigation isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
         <AuthRoutes isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />

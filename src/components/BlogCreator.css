@@ -1,0 +1,87 @@
+/* BlogCreator.css */
+
+.form-container {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* width: 100px; */
+  margin: 20px auto;
+  position: relative;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.blogHeading {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.cancel-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #999;
+}
+
+.cancel-button:hover {
+  color: #666;
+}
+
+.createBlogForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blogInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.createBlogForm button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.createBlogForm button:hover {
+  background-color: #0056b3;
+}
+
+.create-blog-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  margin: 20px 0;
+  margin-left: 0px;
+  display: block;
+  /* width: 200px; */
+  text-align: center;
+  /* margin-left: auto; */
+  margin-right: auto;
+}
+
+.create-blog-button:hover {
+  background-color: #1e7e34;
+}
